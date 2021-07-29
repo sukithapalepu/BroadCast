@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Example Of BroadCast"
+        android:textSize="25dp"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        android:layout_marginLeft="100dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/imageButton"
+        android:text="Android Developers"
+        android:textColor="#ff87ff09"
+        android:textSize="30dp"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="100dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="374dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="broadcastIntent"
+        android:text="BroadCast Intent"
+        tools:ignore="MissingConstraints" />
+
+
+</LinearLayout>
